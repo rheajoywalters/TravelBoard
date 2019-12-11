@@ -2,8 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
-import { App, SignIn, SignUp } from "./App";
+import { App } from "./App";
+import { SignIn, SignUp } from "./Authentication";
 import { BrowserRouter, Route } from "react-router-dom";
+//import { LoadScript } from "@react-google-maps/api";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -17,3 +19,8 @@ ReactDOM.render(
 );
 
 serviceWorker.unregister();
+// <LoadScript
+//id="script-loader"
+//googleMapsApiKey="AIzaSyAHiCSDftOEJQjbdTQiXuU2UMNFROlaB-c"
+//>
+// </LoadScript>
